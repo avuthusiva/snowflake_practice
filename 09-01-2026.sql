@@ -40,3 +40,4 @@ copy into customers from
 (select $1,$2,$3,$4,$5,$6,$7,$8,metadata$filename,metadata$file_row_number from @aws_s3_stage/csv/Customers.csv
 (file_format=> CSV_SKIP_HEADER));
 select * from customers;
+select * from mock_data;
